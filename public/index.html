@@ -8,7 +8,7 @@
     <title>Перевірка веб-сторінки</title>
     <link rel="stylesheet" media="all" href="assets/styles.css"/>
     <script src="assets/jquery-3.2.1.min.js"></script>
-    <script src="assets/scripts.js"></script>
+    <!-- <script src="assets/scripts.js"></script> -->
   </head>
 
 
@@ -43,6 +43,24 @@
 
 
   </body>
+
+
+
+  <script type="text/javascript">
+    (function(){
+
+        buttonClick = function( msg ){
+          alert(msg)
+        };
+
+        plus = function(){
+          var res = parseFloat( $('#number1').val() ) + parseFloat( $('#number2').val() );
+          alert(res)
+        }
+
+    })()      
+
+  </script>
 
 
 </html>
