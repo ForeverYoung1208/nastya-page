@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Перевірка веб-сторінки</title>
+    <link rel="stylesheet" media="all" href="assets/styles.css"/>
+    <script src="assets/jquery-3.2.1.min.js"></script>
+    <!-- <script src="assets/scripts.js"></script> -->
+  </head>
+
+
+
+
+
+  <body>
+    <h1> Перевірка веб-сторінки</h1>
+
+    <h2> Корисні посилвння на інші ресурси Інтернет </h2>
+
+    <hr>
+
+    <a href="http://aztekium.pl/mat.py">гра із таблицею множення</a>
+
+    <hr>
+
+    <button onclick="buttonClick('Привет Настя!!')"> нажми меня </button>
+
+    <button onclick="buttonClick('АААААА  МЕНЯ НАЖАЛИ!!!!  ')"> не нажимай меня </button>
+
+    <button onclick="buttonClick('я настина кнопка!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  ')"> надо меня нажать </button>
+    <hr>
+    
+    number1:  
+    <textarea id="number1"></textarea>
+    number2:
+    <textarea id="number2"></textarea>
+
+    <button onclick="plus()"> сложение </button>
+    <hr>
+
+
+  </body>
+
+
+
+  <script type="text/javascript">
+    (function(){
+
+        buttonClick = function( msg ){
+          alert(msg)
+        };
+
+        plus = function(){
+          var res = parseFloat( $('#number1').val() ) + parseFloat( $('#number2').val() );
+          alert(res)
+        }
+
+    })()      
+
+  </script>
+
+
+</html>
